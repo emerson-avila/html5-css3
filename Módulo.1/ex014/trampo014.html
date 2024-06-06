@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px )" srcset="Imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="Imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="imagem flxível">
+    </picture>
+
+    <h1>Reproduzindo Áudios</h1>
+    <p>Aprendendo a adicionar áudios em HTML5</p>
+    
+    <audio preload="metadata" controls autoplay loop>
+        <source src="midias/MUSICA.mp3" type="audio/mpeg">
+        <source src="midias/MUSICA.wav" type="audio/wav">
+        <source src="midias/MUSICA.ogg" type="audio/ogg">
+        <p>dá não mano <a href="midias/MUSICA.mp3">click ai pra tenta baixar kk></a></p>
+    </audio>
+    <h1>Inserindo vídeos hospedados localmente</h1>  
+    <p>Esse ai é do meu server</p>  
+
+    <video controls poster="Imagens/foto-m.png" width="400px" loop>
+        <source src="midias/video.mp4" type="video/mp4">
+        <source src="midias/video1.webm" type="video/webm">
+        <source src="midias/video2.mp4" type="video/mp4">
+        <p>se não carregar não deu </p>
+    </video>
+    <h1>Inserindo vídeos do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/GW_fdXHOWp4?si=nmdFENxxp6a0FYmn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+</body>
+</html>
