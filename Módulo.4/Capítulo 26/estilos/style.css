@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    width: 1200px;
+    height: 900px;
+    background-color: limegreen;
+    display: flex;
+    flex-flow: column wrap;
+
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    gap: 20px;
+
+}
+
+.flex-box {
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    display: flex;
+
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-box > h1 {
+    color: white;
+    text-shadow: 1px 1px 10px black;
+    text-align: center;
+}
